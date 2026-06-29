@@ -6,7 +6,7 @@
     <!-- @author Syed -->
 
     <groupId>com.rpc</groupId>
-    <artifactId>simple-rpc</artifactId>
+    <artifactId>bonerpc</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 

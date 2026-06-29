@@ -92,7 +92,7 @@
 ### 编译
 
 ```bash
-cd simple-rpc
+cd bonerpc
 mvn clean install -DskipTests
 ```
 
@@ -147,7 +147,7 @@ mvn exec:java -Dexec.mainClass="com.rpc.demo.ConsumerApp" -Dexec.args="zk 127.0.
 ## 项目结构
 
 ```
-simple-rpc/
+bonerpc/
 ├── pom.xml
 ├── rpc-core/                        # 框架核心
 │   └── src/main/java/com/rpc/
