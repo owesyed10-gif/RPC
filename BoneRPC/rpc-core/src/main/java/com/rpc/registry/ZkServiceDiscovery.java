@@ -14,14 +14,14 @@ import java.util.concurrent.ConcurrentHashMap;
  * 基于Zookeeper的服务发现实现
  * <p>
  * 核心设计：
- * - 首次发现：读取 /bonerpc/{serviceName} 下所有子节点构建实例列表
+ * - 首次发现：读取 /bond-rpc/{serviceName} 下所有子节点构建实例列表
  * - 动态监听：使用 PathChildrenCache 监听子节点增删，实时刷新本地缓存
  * - 本地缓存：每个 serviceName 独立维护一份地址列表，线程安全
  * @author Syed
  */
 public class ZkServiceDiscovery implements ServiceDiscovery {
 
-    private static final String ROOT_PATH = "/bonerpc";
+    private static final String ROOT_PATH = "/bond-rpc";
     private final CuratorFramework client;
     /** 按服务名隔离的本地地址缓存：serviceName -> 实例列表 */
     private final Map<String, List<ServiceInstance>> instanceCache = new ConcurrentHashMap<>();

@@ -1,4 +1,4 @@
-# Simple-RPC
+# Bond-RPC
 
 > Author: [Syed](https://github.com/Syed)
 
@@ -92,7 +92,7 @@
 ### 编译
 
 ```bash
-cd bonerpc
+cd bond-rpc
 mvn clean install -DskipTests
 ```
 
@@ -147,7 +147,7 @@ mvn exec:java -Dexec.mainClass="com.rpc.demo.ConsumerApp" -Dexec.args="zk 127.0.
 ## 项目结构
 
 ```
-bonerpc/
+bond-rpc/
 ├── pom.xml
 ├── rpc-core/                        # 框架核心
 │   └── src/main/java/com/rpc/
